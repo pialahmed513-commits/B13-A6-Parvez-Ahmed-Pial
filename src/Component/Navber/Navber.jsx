@@ -3,7 +3,7 @@ import navimg from '../../assets/shopping-cart.png'
 const Navber = () => {
     return (
         <div>
- <div className="navbar bg-base-100 shadow-sm flex justify-between">
+ <div className="navbar bg-base-100 shadow-sm flex justify-between container">
   <div className="">
     <a className="text-2xl text-[#4F39F6] font-semibold pl-10">Digi Tolls</a>
   </div>
