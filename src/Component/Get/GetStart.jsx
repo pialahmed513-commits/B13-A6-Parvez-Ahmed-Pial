@@ -8,8 +8,8 @@ const GetStart = () => {
         <div className="py-12 px-4">
        
             <div className='flex flex-col justify-center items-center mb-10 text-center'>
-                <h1 className='text-3xl md:text-4xl font-bold text-gray-800'>Get Started in 3 Steps</h1>
-                <p className='text-gray-600 mt-2'>Start using premium digital tools in minutes, not hours.</p>
+                <h1 className='text-3xl md:text-4xl font-bold '>Get Started in 3 Steps</h1>
+                <p className=' mt-2'>Start using premium digital tools in minutes, not hours.</p>
             </div>
 
       

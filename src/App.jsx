@@ -9,6 +9,7 @@ import SelectedCard from './Component/SelectedCard/SelectedCard';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import GetStart from './Component/Get/GetStart';
+import Pricing from './Component/PricingPackeg/Pricing';
 
 function App() {
   const [products, setProducts] = useState([]);
