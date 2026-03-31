@@ -8,6 +8,7 @@ import Products from './Component/Products/Products';
 import SelectedCard from './Component/SelectedCard/SelectedCard';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import GetStart from './Component/Get/GetStart';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -47,8 +48,8 @@ function App() {
       <Banner />
       <Text />
       <Title />
-
-      {/* 🔄 Toggling Buttons Section */}
+    
+      
       <div className="flex justify-center gap-4 my-12">
         <button 
           onClick={() => setActiveTab('product')} 
@@ -76,6 +77,8 @@ function App() {
           />
         )}
       </div>
+        <GetStart></GetStart>
+        <Pricing></Pricing>
 
       <ToastContainer position="top-right" autoClose={1500} />
     </div>
