@@ -3,11 +3,11 @@ const SelectedCard = ({ cart, handleRemove, handleCheckout }) => {
 
     return (
         <div className="max-w-3xl mx-auto py-10 animate-fade-in">
-            <h2 className="text-3xl font-black mb-10 text-center text-gray-800 ">Your Shopping Cart</h2>
+            <h2 className="text-2xl font-black mb-10 text-center">Your Shopping Cart</h2>
             
             {cart.length === 0 ? (
                 <div className="text-center py-24 bg-gray-50 rounded-[40px] border-4  border-gray-200">
-                    <p className="text-3xl font-bold text-gray-300 italic mb-4">Cart is empty! </p>
+                    <p className="text-2xl font-bold text-gray-300 mb-4">Cart is empty! </p>
                     <p className="text-gray-400">Add some tools to power up your workflow.</p>
                 </div>
             ) : (
@@ -17,10 +17,10 @@ const SelectedCard = ({ cart, handleRemove, handleCheckout }) => {
                         {cart.map(item => (
                             <div key={item.id} className="flex items-center justify-between p-6 bg-white shadow-lg rounded-3xl border border-gray-50 hover:border-blue-100 transition-all">
                                 <div className="flex items-center gap-6">
-                                    <span className="text-5xl bg-gray-100 p-3 rounded-2xl">{item.icon}</span>
+                                    <span className="text-2xl bg-gray-100 p-3 rounded-2xl">{item.icon}</span>
                                     <div>
-                                        <h4 className="font-extrabold text-xl text-gray-800">{item.name}</h4>
-                                        <p className="text-[#4F39F6] font-black text-lg">${item.price}</p>
+                                        <h4 className="font-extrabold text-xl">{item.name}</h4>
+                                        <p className="text-[#4F39F6] font-black text-xl">${item.price}</p>
                                     </div>
                                 </div>
                                 <button 
