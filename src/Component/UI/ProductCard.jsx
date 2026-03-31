@@ -1,3 +1,4 @@
+import { MdOutlineDone } from "react-icons/md";
 const ProductCard = ({ product, handleAddToCart, cart }) => {
     const isInCart = cart.some(item => item.id === product.id);
 
@@ -26,7 +27,7 @@ const ProductCard = ({ product, handleAddToCart, cart }) => {
                 <ul className="space-y-3 mb-8">
                     {product.features.map((feature, index) => (
                         <li key={index} className="flex items-center gap-3 text-sm font-semibold text-gray-600">
-                            <span className="text-green-500 text-lg">✔</span> {feature}
+                            <span className="text-green-500 text-lg"><MdOutlineDone /></span> {feature}
                         </li>
                     ))}
                 </ul>

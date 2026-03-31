@@ -24,7 +24,7 @@ function App() {
     const isExist = cart.find(item => item.id === product.id);
     if (!isExist) {
       setCart([...cart, product]);
-      toast.success(`${product.name} Added to Cart! 🛒`);
+      toast.success(`${product.name} Added to Cart! `);
     } else {
       toast.warn("Product already in cart!");
     }
@@ -33,12 +33,12 @@ function App() {
   const handleRemove = (id) => {
     const remaining = cart.filter(item => item.id !== id);
     setCart(remaining);
-    toast.error("Item Removed ❌");
+    toast.error("Item Removed ");
   };
 
   const handleCheckout = () => {
     setCart([]);
-    toast.info("Checkout Success! Cart Cleared. 🚀");
+    toast.info("Checkout Success! Cart Cleared. ");
   };
 
   return (
@@ -64,7 +64,7 @@ function App() {
         </button>
       </div>
 
-      {/* 📊 Section Rendering */}
+      
       <div className="container mx-auto px-4 pb-24">
         {activeTab === 'product' ? (
           <Products products={products} handleAddToCart={handleAddToCart} cart={cart} />
