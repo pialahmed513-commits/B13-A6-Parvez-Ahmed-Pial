@@ -9,7 +9,7 @@ const GetStart = () => {
        
             <div className='flex flex-col justify-center items-center mb-10 text-center'>
                 <h1 className='text-3xl md:text-4xl font-bold '>Get Started in 3 Steps</h1>
-                <p className=' mt-2'>Start using premium digital tools in minutes, not hours.</p>
+                <p className='mt-2'>Start using premium digital tools in minutes, not hours.</p>
             </div>
 
       

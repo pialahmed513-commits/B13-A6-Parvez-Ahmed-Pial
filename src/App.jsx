@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import GetStart from './Component/Get/GetStart';
 import Pricing from './Component/PricingPackeg/Pricing';
+import Cti from './Component/CTI-Section/Cti';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -80,6 +81,7 @@ function App() {
       </div>
         <GetStart></GetStart>
         <Pricing></Pricing>
+        <Cti></Cti>
 
       <ToastContainer position="top-right" autoClose={1500} />
     </div>
